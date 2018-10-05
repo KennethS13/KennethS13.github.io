@@ -1,0 +1,327 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*----------CSS Reset Ends Here!----------*/
+
+
+/*----------My CSS Begins Here!----------*/
+
+/*----------All My Pages----------*/
+
+body {
+    background-color: #efeee7;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffffff;
+    margin: 0px 0px 20px 0px;
+    border-bottom: 2px solid #cccccc;
+    height: 68px;
+}
+
+.container1 {
+    width: 319px;
+    margin: 0 0 0 202px;
+}
+
+h1 {
+    background-color: #4aaaa5;
+    color: #eee;
+    font-size: 28px;  
+    text-align: center;
+    padding: 20px;
+}
+
+.container2 {
+    width: 200px;
+}
+
+.nav .nav-item {
+    position: relative;
+    left: 980px;
+    bottom: 44px;
+    display: inline;
+    margin: 0;
+    padding: 2px;
+}
+
+.nav-item1 {
+    border-right: 1px solid #cccccc;
+}
+
+.nav-item2 {
+    padding-left: 5px !important;
+    border-right: 1px solid #cccccc; 
+}
+
+.nav-item3 {
+    padding-left: 5px !important;
+}
+
+ul {
+    list-style-type: none;
+    width: 200px;
+}
+
+a {
+    color: #cccccc;
+}
+
+a:hover {
+    color: #d21034;
+}
+
+h2 {
+    font-size: 24px;
+    color: #4aaaa5;
+    padding: 30px;
+    padding-left: 10px;
+    margin-right: 26px;
+    margin-left: 30px;
+    border-bottom: 5px solid #cccccc;
+}
+
+/*----------Profile Page----------*/
+
+.container3 {
+    height: 500px;
+}
+
+#main-bio, #bio-image {
+    float: left;
+}
+
+#main-bio {
+    width: 960px;
+    line-height: 150%;
+    margin: 20px 210px 20px 200px;
+    padding: 5px 5px 15px 5px;
+    border: 2px solid #dddddd;
+    background-color: #ffffff;
+}
+
+#bio-image {
+    width: 200px;
+    margin: 30px 20px 40px 5px;
+}
+
+.p1 {
+    text-indent: 8px;
+    margin: 30px 30px 0px 0px;
+}
+
+.p2 {
+    text-indent: 8px;
+    padding-bottom: 10px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+footer {
+    margin-bottom: 0px;
+    height: 63px;
+    background-color: #666666;
+    border-top: 10px solid #4aaaa5;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 46px;
+    color: #cccccc;
+}
+
+.copyright::after {
+    content: "\00a9";
+}
+
+/*----------Contact Page----------*/
+
+.container4 {
+    height: 600px;
+}
+
+#contact-info {
+    line-height: 150%;
+    width: 960px;
+    height: 500px;
+    margin: 20px 210px 20px 200px;
+    padding: 5px 5px 15px 5px;
+    border: 2px solid #dddddd;
+    background-color: #ffffff;
+}
+
+form {
+    margin-top: 50px;
+    margin-left: 70px;
+}
+
+.form-control {
+    width: 800px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ece8e8;
+    color: #666666;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+input {
+    height: 45px;
+}
+
+form .submit {
+    background-color: #4aaaa5;
+    border-color: transparent;
+    color: #cccccc;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    width: 200px;
+    margin-top: 20px;
+}
+
+form .submit:hover {
+    background-color: #d21034;
+    cursor: pointer;
+}
+
+.contact-links {
+    color: #4aaaa5;
+}
+
+.contact-links .link-item2 {
+    display: inline;
+    position: relative;
+    bottom: 500px;
+    left: 920px;
+}
+
+/*----------Portfolio Page----------*/
+
+.container5 {
+    width: 100vw;
+    height: 960px;
+}
+
+#Portfolio {
+    width: 960px;
+    height: 700px;
+    margin: 20px 210px 50px 200px;
+    padding: 5px 5px 15px 5px;
+    border: 2px solid #dddddd;
+    background-color: #ffffff;
+}
+
+.portfolio-img {
+    background: linear-gradient(to right bottom, #aacac5,#e8eeed 40%, #e8eeed);
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    margin: 30px 20px 40px 40px;
+}
+
+h3 {
+    background-color: #4aaaa5;
+    color: #eee;
+    font-size: 16px;  
+    text-align: center;
+    padding-top: 6px;
+    border: 1px solid #dddddd;
+    width: 239px;
+    height: 20px;
+}
+
+#mystic {
+    position: relative;
+    bottom: 400px;
+    left: 40px;
+}
+
+#pokestop {
+    position: relative;
+    bottom: 428px;
+    left: 344px;
+}
+
+#gym {
+    position: relative;
+    bottom: 455px;
+    left: 648px;
+}
+
+#pokecoin {
+    position: relative;
+    bottom: 170px;
+    left: 40px;
+}
+
+#egg {
+    position: relative;
+    bottom: 198px;
+    left: 344px;
+}
+
+#backpack {
+    position: relative;
+    bottom: 225px;
+    left: 648px;
+}

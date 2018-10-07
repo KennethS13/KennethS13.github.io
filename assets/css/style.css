@@ -68,14 +68,15 @@ body {
 
 header {
     background-color: #ffffff;
-    margin: 0px 0px 20px 0px;
-    border-bottom: 2px solid #cccccc;
+    margin: 0px 0px 20px 202px;
     height: 68px;
+    width: 319px;
 }
 
 .container1 {
-    width: 319px;
-    margin: 0 0 0 202px;
+    border-bottom: 2px solid #cccccc;
+    height: 68px;
+    background-color: #666666;
 }
 
 h1 {
@@ -86,13 +87,9 @@ h1 {
     padding: 20px;
 }
 
-.container2 {
-    width: 200px;
-}
-
 .nav .nav-item {
     position: relative;
-    left: 980px;
+    left: 780px;
     bottom: 44px;
     display: inline;
     margin: 0;
@@ -137,8 +134,8 @@ h2 {
 
 /*----------Profile Page----------*/
 
-.container3 {
-    height: 500px;
+.container2 {
+    height: 960px;
 }
 
 #main-bio, #bio-image {
@@ -146,8 +143,9 @@ h2 {
 }
 
 #main-bio {
+    height: 600px;
     width: 960px;
-    line-height: 150%;
+    line-height: 200%;
     margin: 20px 210px 20px 200px;
     padding: 5px 5px 15px 5px;
     border: 2px solid #dddddd;
@@ -194,14 +192,14 @@ footer {
 
 /*----------Contact Page----------*/
 
-.container4 {
-    height: 600px;
+.container3 {
+    height: 960px;
 }
 
 #contact-info {
-    line-height: 150%;
+    line-height: 200%;
     width: 960px;
-    height: 500px;
+    height: 600px;
     margin: 20px 210px 20px 200px;
     padding: 5px 5px 15px 5px;
     border: 2px solid #dddddd;
@@ -221,6 +219,10 @@ form {
     color: #666666;
     font-size: 16px;
     margin-bottom: 16px;
+}
+
+.message-box {
+    height: 200px;
 }
 
 input {
@@ -251,13 +253,13 @@ form .submit:hover {
 .contact-links .link-item2 {
     display: inline;
     position: relative;
-    bottom: 500px;
+    bottom: 600px;
     left: 920px;
 }
 
 /*----------Portfolio Page----------*/
 
-.container5 {
+.container4 {
     width: 100vw;
     height: 960px;
 }

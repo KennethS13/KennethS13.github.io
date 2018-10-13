@@ -132,6 +132,23 @@ h2 {
     border-bottom: 5px solid #cccccc;
 }
 
+footer {
+    margin-bottom: 0px;
+    height: 63px;
+    background-color: #666666;
+    border-top: 10px solid #4aaaa5;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 46px;
+    color: #cccccc;
+}
+
+.copyright::after {
+    content: "\00a9";
+}
+
 /*----------Profile Page----------*/
 
 .container2 {
@@ -171,23 +188,6 @@ h2 {
     content: "";
     clear: both;
     display: table;
-}
-
-footer {
-    margin-bottom: 0px;
-    height: 63px;
-    background-color: #666666;
-    border-top: 10px solid #4aaaa5;
-}
-
-.copyright {
-    text-align: center;
-    padding-top: 46px;
-    color: #cccccc;
-}
-
-.copyright::after {
-    content: "\00a9";
 }
 
 /*----------Contact Page----------*/
@@ -261,12 +261,12 @@ form .submit:hover {
 
 .container4 {
     width: 100vw;
-    height: 960px;
+    height: 100%;
 }
 
 #Portfolio {
     width: 960px;
-    height: 700px;
+    height: 750px;
     margin: 20px 210px 50px 200px;
     padding: 5px 5px 15px 5px;
     border: 2px solid #dddddd;

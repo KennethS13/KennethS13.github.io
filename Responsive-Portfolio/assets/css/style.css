@@ -1,0 +1,612 @@
+body {
+    background-color: #efeee7;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+.container1 {
+    width: 100%;
+    max-width: 1600px;
+    border-bottom: 2px solid #cccccc;
+    height: 4.25em;
+    background-color: #666666;
+}
+
+header {
+    background-color: #ffffff;
+    margin: 0 0 1em 12.5em;
+    height: 1em;
+    width: 20em;
+}
+
+h1 {
+    background-color: #4aaaa5;
+    color: #eee;
+    font-size: 1.75em;  
+    text-align: center;
+    padding: .72em;
+    width: 10em;
+}
+
+.nav .nav-item {
+    position: relative;
+    left: 48em;
+    bottom: 2.5em;
+    display: inline;
+    margin: 0;
+    padding: 2px;
+}
+
+.nav-item1 {
+    border-right: 1px solid #cccccc;
+}
+
+.nav-item2 {
+    padding-left: 5px !important;
+    border-right: 1px solid #cccccc; 
+}
+
+.nav-item3 {
+    padding-left: 5px !important;
+}
+
+ul {
+    list-style-type: none;
+    width: 13em;
+}
+
+a {
+    color: #cccccc;
+}
+
+a:hover {
+    color: #d21034;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #4aaaa5;
+    padding: 1em;
+    padding-left: .1em;
+    margin-right: .75em;
+    margin-left: .5em;
+    border-bottom: 5px solid #cccccc;
+}
+
+
+/*----------Profile Page----------*/
+
+.container2 {
+    height: 40em;
+}
+
+#main-bio, #bio-image {
+    float: left;
+}
+
+#main-bio {
+    box-sizing: border-box;
+    height: 35em;
+    width: 60em;
+    line-height: 200%;
+    margin: 3em 0 3em 12.5em;
+    padding: .5em .1em .15em 1em;
+    border: 2px solid #dddddd;
+    background-color: #ffffff;
+}
+
+#bio-image {
+    width: 12.5em;
+    margin: 2.5em 1em 2.5em .75em;
+}
+
+.p1 {
+    text-indent: 1em;
+    margin: 2em 2em 0 0;
+}
+
+.p2 {
+    text-indent: 1em;
+    padding: 0 2em 2em 2em;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+footer {
+    margin-bottom: 0px;
+    height: 63px;
+    background-color: #666666;
+    border-top: 10px solid #4aaaa5;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 46px;
+    color: #cccccc;
+}
+
+.copyright::after {
+    content: "\00a9";
+}
+
+/*----------Contact Page----------*/
+
+.container3 {
+    height: 38em;
+}
+
+#contact-info {
+    box-sizing: border-box;
+    line-height: 200%;
+    width: 60em;
+    height: 33em;
+    margin: 3em 0 3em 12.5em;
+    padding: .5em .1em .15em 1em;
+    border: 2px solid #dddddd;
+    background-color: #ffffff;
+}
+
+form {
+    margin-top: 3em;
+    margin-left: 4em;
+}
+
+.form-control {
+    width: 50em;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ece8e8;
+    color: #666666;
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+.message-box {
+    height: 8em;
+    font-size: 1.2em;
+}
+
+input {
+    height: 2.5em;
+}
+
+form .submit {
+    background-color: #4aaaa5;
+    border-color: transparent;
+    color: #cccccc;
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: .15em;
+    height: 3em;
+    width: 12.5em;
+    margin-top: 1em;
+}
+
+form .submit:hover {
+    background-color: #d21034;
+    cursor: pointer;
+}
+
+.contact-links {
+    color: #4aaaa5;
+}
+
+.contact-links .link-item2 {
+    display: inline;
+    position: relative;
+    bottom: 33.5em;
+    left: 61.5em;
+}
+
+/*----------Portfolio Page----------*/
+
+
+#Portfolio {
+    box-sizing: border-box;
+    width: 60em;
+    height: 45em;
+    margin: 3em 0 3em 12.5em;
+    padding: 1em;
+    border: 2px solid #dddddd;
+    background-color: #ffffff;
+}
+
+.portfolio-img {
+    background: linear-gradient(to right bottom, #aacac5,#e8eeed 40%, #e8eeed);
+    width: 12.5em;
+    height: 12.5em;
+    padding: 1.25em;
+    margin: 2em 1.25em 2.5em 2.5em;
+}
+
+h3 {
+    background-color: #4aaaa5;
+    color: #eee;
+    font-size: 1em;  
+    text-align: center;
+    padding-top: 1em;
+    border: 1px solid #dddddd;
+    width: 14.9em;
+    height: 1.5em;
+}
+
+#unown {
+    position: relative;
+    bottom: 25em;
+    left: 2.5em;
+}
+
+#pokestop {
+    position: relative;
+    bottom: 27.6em;
+    left: 21.5em;
+}
+
+#gym {
+    position: relative;
+    bottom: 30.25em;
+    left: 40.5em;
+}
+
+#pokecoin {
+    position: relative;
+    bottom: 13.2em;
+    left: 2.5em;
+}
+
+#egg {
+    position: relative;
+    bottom: 15.7em;
+    left: 21.5em;
+}
+
+#backpack {
+    position: relative;
+    bottom: 18.2em;
+    left: 40.5em;
+}
+
+/*----------Responsive Design----------*/
+
+@media (max-width: 1201px) {
+    .nav .nav-item {
+        position: relative;
+        left: 34em;
+    }
+
+    .container2 {
+        height: 52em;
+    }
+    #main-bio {
+        height: 47em;
+        width: 45em;
+    }
+
+    .p2 {
+        padding-left: .5em;
+    }
+
+    #Portfolio {
+        width: 46em;
+        height: 65em;
+    }
+
+    #unown {
+        position: relative;
+        bottom: 44.7em;
+        left: 2.5em;
+    }
+    
+    #pokestop {
+        position: relative;
+        bottom: 47.25em;
+        left: 21.5em;
+    }
+    
+    #gym {
+        position: relative;
+        bottom: 30.25em;
+        left: 2.5em;
+    }
+    
+    #pokecoin {
+        position: relative;
+        bottom: 32.75em;
+        left: 21.5em;
+    }
+    
+    #egg {
+        position: relative;
+        bottom: 15.7em;
+        left: 2.5em;
+    }
+    
+    #backpack {
+        position: relative;
+        bottom: 18.25em;
+        left: 21.5em;
+    }
+
+    .contact-links .link-item2 {
+        display: inline;
+        position: relative;
+        left: 47.5em;
+    }
+
+    #contact-info {
+        width: 46em;
+    }
+
+    .form-control {
+        width: 37em;
+    }
+}
+
+@media (max-width: 980px) {
+
+    header {
+        margin-left: 6em;
+    }
+    .nav .nav-item {
+        position: relative;
+        left: 28em;
+    }
+
+    .container2 {
+        height: 56em;
+    }
+    #main-bio {
+        margin-left: 6em;
+        height: 51em;
+        width: 40em;
+    }
+
+    .p1 {
+        margin-right: 0;
+    }
+
+    .p1, .p2 {
+        padding-right: 1em;
+    }
+
+    #Portfolio {
+        margin-left: 6em;
+        width: 40em;
+        height: 65em;
+    }
+
+    .unown, .pokestop, .gym, .pokecoin, .egg, .backpack {
+        margin-left: 2em;
+    }
+
+    #unown {
+        position: relative;
+        bottom: 44.7em;
+        left: 2em;
+    }
+    
+    #pokestop {
+        position: relative;
+        bottom: 47.25em;
+        left: 20.5em;
+    }
+    
+    #gym {
+        position: relative;
+        bottom: 30.25em;
+        left: 2em;
+    }
+    
+    #pokecoin {
+        position: relative;
+        bottom: 32.75em;
+        left: 20.5em;
+    }
+    
+    #egg {
+        position: relative;
+        bottom: 15.7em;
+        left: 2em;
+    }
+    
+    #backpack {
+        position: relative;
+        bottom: 18.25em;
+        left: 20.5em;
+    }
+
+    .contact-links .link-item2 {
+        display: inline;
+        position: relative;
+        left: 35.5em;
+    }
+
+    #contact-info {
+        margin-left: 6em;
+        width: 40em;
+    }
+
+    .form-control {
+        width: 31em;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        margin-left: 1.5em;
+    }
+    .nav .nav-item {
+        position: relative;
+        left: 24em;
+    }
+
+    .container2 {
+        height: 60em;
+    }
+    #main-bio {
+        margin-left: 1.5em;
+        height: 55em;
+        width: 36em;
+    }
+
+    .p2 {
+        padding: 0 .5em 0 .5em;
+    }
+
+    #Portfolio {
+        margin-left: 1.5em;
+        width: 36em;
+        height: 65em;
+    }
+
+    .unown, .pokestop, .gym, .pokecoin, .egg, .backpack {
+        margin-left: .75em;
+    }
+
+    .pokestop, .pokecoin, .backpack {
+        margin-right: 0;
+    }
+
+    #unown {
+        position: relative;
+        bottom: 44.7em;
+        left: .75em;
+    }
+    
+    #pokestop {
+        position: relative;
+        bottom: 47.25em;
+        left: 18em;
+    }
+    
+    #gym {
+        position: relative;
+        bottom: 30.25em;
+        left: .75em;
+    }
+    
+    #pokecoin {
+        position: relative;
+        bottom: 32.75em;
+        left: 18em;
+    }
+    
+    #egg {
+        position: relative;
+        bottom: 15.7em;
+        left: .75em;
+    }
+    
+    #backpack {
+        position: relative;
+        bottom: 18.25em;
+        left: 18em;
+    }
+
+    .contact-links .link-item2 {
+        display: inline;
+        position: relative;
+        left: 27em;
+    }
+
+    #contact-info {
+        margin-left: 1.5em;
+        width: 36em;
+    }
+
+    .form-control {
+        width: 28em;
+    }    
+}
+
+@media (max-width: 640px) {
+    header {
+        margin: 0;
+    }
+
+    .nav .nav-item {
+        position: relative;
+        left: 24em;
+    }
+
+    .container2 {
+        height: 60em;
+    }
+
+    #main-bio {
+        margin-left: 0;
+        height: 55em;
+        width: 35em;
+        float: none;
+    }
+
+    #Portfolio {
+        margin-left: 0;
+        width: 36em;
+        height: 125em;
+    }
+
+    .unown, .pokestop, .gym, .pokecoin, .egg, .backpack {
+        margin-left: 9em;
+    }
+
+    #unown {
+        position: relative;
+        bottom: 103.7em;
+        left: 9em;
+    }
+    
+    #pokestop {
+        position: relative;
+        bottom: 86.7em;
+        left: 9em;
+    }
+    
+    #gym {
+        position: relative;
+        bottom: 69.6em;
+        left: 9em;
+    }
+    
+    #pokecoin {
+        position: relative;
+        bottom: 52.5em;
+        left: 9em;
+    }
+    
+    #egg {
+        position: relative;
+        bottom: 35.5em;
+        left: 9em;
+    }
+    
+    #backpack {
+        position: relative;
+        bottom: 18.5em;
+        left: 9em;
+    }
+
+    #contact-info {
+        margin-left: 0;
+    }
+
+    .contact-links .link-item2 {
+        display: inline;
+        position: relative;
+        left: 25.5em;
+    }
+
+    #contact-info {
+        width: 36em;
+    }
+
+    .form-control {
+        width: 27em;
+    }    
+}

@@ -25,8 +25,9 @@ p {
 }
 
 footer {
-    position: absolute;
-    bottom: -0.01em;
+    position: fixed;
+    bottom: 0;
+    left: 0;
     border-top: 0.5em solid teal;
 }
 
@@ -34,47 +35,20 @@ footer {
     content: "\00a9";
 }
 
-@media (max-width: 991.98px) { 
-    html {
-        height: 100%;
-    }
-    body {
-        min-height: 100%;
-    }
+.content {
+    padding-bottom: 5em;
+}
 
-    footer {
-        
-        
-        border-top: 0.5em solid teal;
+@media (min-width: 991.98px) { 
+    .col-10 {
+        margin-left: 6em;
     }
 }
 
 @media (max-width: 767.98px) {
-    html {
-        height: 100%;
-    }  
-    body {
-    min-height: 100%;
-    }
-
-    footer {
-        
-        
-        border-top: 0.5em solid teal;
-    }
+    
 }
 
-@media (max-width: 575.98px) {
-    html {
-        height: 100%;
-    }  
-    body {
-        min-height: 100%;
-    }
-    
-    footer {
+@media (min-width: 575.98px) {
         
-        
-        border-top: 0.5em solid teal;
-    }
 }

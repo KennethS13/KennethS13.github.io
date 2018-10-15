@@ -38,17 +38,3 @@ footer {
 .content {
     padding-bottom: 5em;
 }
-
-@media (min-width: 991.98px) { 
-    .col-10 {
-        margin-left: 6em;
-    }
-}
-
-@media (max-width: 767.98px) {
-    
-}
-
-@media (min-width: 575.98px) {
-        
-}

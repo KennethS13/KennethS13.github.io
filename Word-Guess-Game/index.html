@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets\css\reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">    
+    <title>Guess That Pokemon!</title>
+</head>
+<body background="assets\images\Bug-background.jpg" style="background-size: 100%">
+    <!-- In Page Title -->
+        <div class="jumbotron jumbotron-fluid bg-dark mb-3" style="height: 4em;">
+            <div class="container">
+              <h1 class="display-5 text-center text-white font-weight-bold font-italic">Guess That Pokemon!</h1>
+            </div>
+          </div>
+    <!-- Main Content Container -->
+    <div class="container w-50">
+        <!-- Image of generic mystery pokemon that switches to image of guessed pokemon -->
+        <div class="row">
+            <div class="card col-md-4 offset-4" style="width: 18rem; padding: .1em; border: .1em solid black;">
+                <img class="card-img-top" src="assets\images\Mystery_Pokemon.jpg" alt="Pokemon Images">
+                <div class="card-body bg-dark text-white">
+                    <h5 class="card-title text-center text-success">Hey Trainer!</h5>
+                    <p class="card-text text-center">Guess the mystery Pokemon below!.</p>
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <!-- Instructions to start game -->
+        <div class="row">
+            <div class="col-md-12">
+                <h3 id="start-game" class="text-info text-center font-weight-bold">Press Any Key to Play</h3>
+            </div>
+        </div>
+        <!-- Players win counter -->
+        <div class="row">
+            <div class="col-md-12">
+                <p id="wins" class="text-center text-danger"></p>
+            </div>
+        </div>
+        <!-- Current mystery Pokemon -->
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="text-info text-center font-weight-bold">Current Mystery Pokemon</h3>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p id="random-pokemon" class="text-center text-danger"> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Players remaining guesses counter -->
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-danger text-center">Remaining Guesses: </p> <span id="remaining-guesses" class="text-danger text-center ></span>
+            </div>
+        </div>
+        <!-- Already guessed letters area -->
+        <div class="row">
+            <div class="col-md-12">
+                <p id="guessed-letters" class="text-center font-weight-bold text-danger"></p>
+            </div>
+        </div>   
+    </div>
+    <script type="text/javascript" src="assets\javascript\game.js"></script>
+</body>
+</html>

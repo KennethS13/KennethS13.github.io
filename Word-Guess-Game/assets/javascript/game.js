@@ -141,7 +141,8 @@ function keyCodeToChar(){
 		if (guessedLetters.indexOf(currentLetter) !== -1) {
 			return;
 		}
-		guessesDisplayed = guessesDisplayed--;
+		remainingGuesses--;
+		guessesDisplayed = document.getElementById("remaining-guesses").textContent = remainingGuesses;
 		console.log(guessesDisplayed);
 		guessedLetters.push(currentLetter);
 		lettersGuessed = guessedLetters.join(" ")

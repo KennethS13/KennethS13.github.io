@@ -14,40 +14,50 @@ var mysteryLettersArray = [];
 var remainingGuesses = 20;
 var guessesDisplayed = document.getElementById("remaining-guesses").textContent = remainingGuesses;
 var playerWins = 0;
-var playerLosses = 0;
+var winsDisplayed = document.getElementById("wins").textContent = playerWins;
 var match;
 var duplicate;
 var currentLetter = "";
+var randomPokemon;
 
 // alphabet array
 //var alphaArray = [];
 //const alpha = "abcdefghijklmnopqrstuvwxyz";
 //alphaArray = alpha.split("");
-for (var i = 65; i < 91; i++){
-	keysArray.push(i);
-}
-// This is where a random word is chosen 
-var randomPokemon = pokemonArray[Math.floor(Math.random() * pokemonArray.length)];
-// Now the randomly chosen word is split into individual characters and also places them into a new array
-var pokemonLettersArray = randomPokemon.split("");
-// This loop uses the split characters and changes them into an underscore, and then writes them to the html
-for (i = 0; i < pokemonLettersArray.length; i++) {
-	mysteryLettersArray.push("_");
-	mysteryLetters = mysteryLettersArray.join(" ")
-}
+
+
+
+function createNewGame() {
+	// This is where a random word is chosen 
+	randomPokemon = pokemonArray[Math.floor(Math.random() * pokemonArray.length)];
+
+	// Now the randomly chosen word is split into individual characters and also places them into a new array
+	pokemonLettersArray = randomPokemon.split("");
+
+	// This loop uses the split characters and changes them into an underscore, and then writes them to the html
+	for (i = 0; i < pokemonLettersArray.length; i++) {
+		mysteryLettersArray.push("_");
+		mysteryLetters = mysteryLettersArray.join(" ")
+	}
+};
+
+createNewGame();
+
 document.getElementById("random-pokemon").textContent = mysteryLetters.toUpperCase();
 console.log(mysteryLetters)
 console.log(randomPokemon);
+
+//This loop is for the keyCode values which will be used in the next function
+for (var i = 65; i < 91; i++){
+	keysArray.push(i);
+}
 
 document.onkeyup = function(q) {
 
 	//Take in the keyCode value for the letter pressed and put it in the keyUp variable.
 	keyUp = q.keyCode;
 	//Convert every keycode to its corresponding letter in the alphabet and assigns it to currentLetter.
-    keyCodeToChar();
-    
-
-    
+    keyCodeToChar();   
 }
 
 //If keyUp is equal to the value in the keysArray, then assign currentLetter to the one letter strings (alphabet).
@@ -132,11 +142,10 @@ function keyCodeToChar(){
 	}
 	else if (keyUp == 32){
 		currentLetter = "space";
-	}
-    
+	}    
 	console.log(currentLetter);
-	
-	
+
+		
 	if (pokemonLettersArray.indexOf(currentLetter) === -1) {
 		if (guessedLetters.indexOf(currentLetter) !== -1) {
 			return;
@@ -156,7 +165,7 @@ function keyCodeToChar(){
 		for (j = 0; j < pokemonLettersArray.length; j++) {
 			if (pokemonLettersArray[j] === currentLetter) {
 				mysteryLettersArray[j] = currentLetter;
-				mysteryLetters = mysteryLettersArray.join(" ")
+				mysteryLetters = mysteryLettersArray.join(" ");
 				document.getElementById("random-pokemon").textContent = mysteryLetters.toUpperCase();
 			}
 		}
@@ -165,4 +174,14 @@ function keyCodeToChar(){
 		document.getElementById("guessed-letters").textContent = lettersGuessed.toUpperCase();	
 	}
 	console.log(mysteryLettersArray);
+	
+	if ((mysteryLettersArray.indexOf("_") === -1) && (remainingGuesses > 0)) {
+		winsDisplayed++;
+		playerWins = document.getElementById("wins").textContent = winsDisplayed;
+		console.log(mysteryLettersArray);
+		console.log(pokemonLettersArray);
+		return;
+	}
+
+	console.log(winsDisplayed);
 }

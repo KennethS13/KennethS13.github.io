@@ -185,3 +185,7 @@ function keyCodeToChar(){
 
 	console.log(winsDisplayed);
 }
+// Need to figure out how to keep Remaining Guesses counter from dropping below 0, logging/displaying a loss, refreshing Remaining Guesses, keep win/loss stats and starting next game.
+// Need to figure out how after player has won, to clear arrays, keep win/loss stats and starting next game. 
+//Need to figure out how to change image when player has guessed word correctly to the image of the guessed word.
+//Need to figure out how to add sound effects when player guesses bot correct and incorrect letters, and correctly guesses the entire word.

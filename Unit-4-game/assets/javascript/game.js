@@ -22,7 +22,8 @@ function randomNumber (min, max) {
     return crystalValue;
 };
 //
-//
+// This fuction sets the random number values for the four crystals, and the random number that is displayed
+// for the play to match, and resets the game counter.
 function gameLoad() {
     crystal1 = randomNumber(1,13);
     console.log(crystal1);
@@ -42,7 +43,8 @@ function gameLoad() {
     resetTally();
 };
 //
-//
+// This will check the game counter against the random number the player is to match to determine a win.
+// If it is a win then the win is writen to the screen and the gameLoad function is ran.
 function isWin() {
     if (gameCounter === targetRandomNumber){
         wins++;
@@ -51,7 +53,8 @@ function isWin() {
     }
 };
 //
-//
+// This will check the game counter against the random number the player is to match to determine a loss.
+// If it is a loss then the loss is writen to the screen and the gameLoad function is ran.
 function isLoss() {
     if (gameCounter > targetRandomNumber) {
         losses++;
@@ -60,14 +63,14 @@ function isLoss() {
     }
 };
 //
-//
+// This function takes the value of the crystal that has been clicked and adds it to the game counter.
 function scoreTally(crystalValue) {
     gameCounter += crystalValue;
-    if (gameCounter === targetRandomNumber) {
-    }
+    // if (gameCounter === targetRandomNumber) {
+    // }
 };
 //
-//
+// This function clears the game counter and sets it back to zero and writes that to the screen.
 function resetTally() {
     $(".counter").empty();
     gameCounter = 0;
@@ -78,9 +81,9 @@ function resetTally() {
 //
 gameLoad()
 //
-//
+// On click event that listens for the players click and then runs the scoreTally, isWIn, isLoss functions.
 $(".button").on("click", function() {
-    console.log(this.value);
+    //console.log(this.value);
     scoreTally(parseInt(this.value), gameCounter);
     $(".counter").text(gameCounter)
     isWin();

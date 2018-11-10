@@ -8,7 +8,7 @@ $(document).ready(function() {
         $(".topics-buttons").empty();
         // Loop through the array of games, then generate buttons for each game in the array. Adding a class of game and a data-attribute with a value of the game for each index.
         topics.forEach(function(game) {
-            $(".topics-buttons").append($("<button>" + game + "</button>").addClass("game btn mr-1 mb-1").attr("data-game", game));
+            $(".topics-buttons").append($("<button>" + game + "</button>").addClass("game btn btn-success mr-1 mb-1").attr("data-game", game));
         });    
     }
 

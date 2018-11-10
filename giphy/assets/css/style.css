@@ -1,0 +1,28 @@
+body {
+    background-image: url("assets\images\classis-video-games.jpg");
+}
+
+p {
+    margin: 1em 3em 1em 0;
+    display: inline;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.topics-view {
+    /* height: 40em;
+    width: 60em; */
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+}

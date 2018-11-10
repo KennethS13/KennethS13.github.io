@@ -1,7 +1,5 @@
 body {
-    background: url("assets/images/classic-video-games.jpg");
-    /* background-color: red; */
-    background-size: 30%;
+    background-image: url("../images/background.jpg");
     color: whitesmoke;
     font-size: 24px;
 }

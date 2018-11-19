@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets\css\reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets\css\style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+    <title>Time Sheet</title>
+</head>
+<body>
+    <div class="container">        
+        <div class="jumbotron text-center">
+                <h1 class="display-4">Train Shceduler and Adminitration</h1>
+                <hr>
+                <!-- Display local time -->
+                <h2>Local Time:
+                    <span id="currentTime"></span>
+                </h2>
+        </div>
+        <!-- End Jumbotron -->
+
+        <div class="row">
+            <!-- Open ROW and begin Timetable -->
+            <div class="col-sm-9">
+              <!-- Panel-Primary needed to get white text in Bootstrap -->
+              <div class="panel panel-primary">
+                <div class="panel-heading">All Train || Scheduled Arrivals</div>
+                <div class="panel-body">
+                  <div class="panel-body">
+                    <table class="table table-hover" id="timeTable">
+                      <thead>
+                        <tr>
+                          <th>Train</th>
+                          <th>Destination</th>
+                          <th>Frequency (min)</th>
+                          <th>Next Arrival</th>
+                          <th>Arrives In (min)</th>
+                        </tr>
+                      </thead>
+      
+                      <!-- Input data will be written to the trainTable below -->
+                      <tbody id="trainTable">
+                        <tr></tr>
+                      </tbody>
+      
+                      <!-- Closes tbody <div> -->
+                    </table>
+                  </div>
+                  <!-- Closes panel-body <div> -->
+                </div>
+                <!-- Closes panel panel-primary <div> -->
+              </div>
+              <!-- Closes Col-sm-9 <div> -->
+            </div>
+      
+            <!--  Begin Sidebar -->
+            <div class="col-sm-3">
+              <!-- Panel-Primary needed to get white text in Bootstrap -->
+              <div class="panel panel-primary">
+                <div class="panel-heading">Add a New Train</div>
+                <div class="panel-body">
+                  <!-- Form -->
+                  <form role="form" class='form-horizontal'>
+      
+                    <div class="form-group">
+                      <label for="train">Train (Alias)</label>
+                      <input type="text" class="form-control" id="enterTrain" placeholder="Train Alias">
+                    </div>
+      
+                    <div class="form-group">
+                      <label for="dest">Destination </label>
+                      <input type="text" class="form-control" id="enterDest" placeholder="Castle Rock, Colorado,">
+                    </div>
+      
+                    <div class="form-group">
+                      <label class="firstTrain" for="firstTrain">First Train Time</label>
+                      <label class="militaryTime">&nbsp;(HH:mm | Military)</label>
+                      <input type="" class="form-control" id="enterTime" placeholder="23:59">
+                    </div>
+      
+                    <div class="form-group">
+                      <label for="minutesAway">Frequency - (mins) </label>
+                      <input type="text" class="form-control" id="enterFrequency" placeholder="120">
+                    </div>
+      
+                    <button type="submit" class="btn btn-warning" id="submit">Add Train</button>
+      
+                    <hr>
+      
+                  </form>
+      
+                  <!-- Closes panel-body <div> -->
+                </div>
+                <!-- Closes panel panel-primary <div> -->
+              </div>
+              <!-- Closes Col-sm-3 <div> -->
+            </div>
+            <!-- Closes Row <div> -->
+          </div>
+    </div>
+<!-- End main container -->
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>

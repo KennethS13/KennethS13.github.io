@@ -1,0 +1,86 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    background-color: rgb(0, 0, 0);   
+}
+
+.jumbotron {
+    width: 100%;
+    background: #ffc107;
+    color: #ffffff;
+    text-shadow: 3px 3px 5px #000000;  
+    border: 1px solid rgb(255, 238, 1);
+    margin-top: 20px;
+}
+
+.panel {
+    background: rgba(251, 192, 54, 0.685);  
+    text-shadow: 1.7px 1.7px 3px #000000;
+    border: 1px solid rgb(255, 238, 1); 
+}
+
+.panel-primary >.panel-heading {
+    color: #ffffff;
+    font-size: 20px;  
+    background: #ffc107; 
+    border: .5px solid rgb(255, 238, 1); 
+    margin-bottom: 5px;          
+}
+
+.sidebar {
+    color: #ffffff;
+    background: rgba(251, 192, 54, 0.685);
+    border: 1px solid rgb(255, 238, 1);  
+}
+
+h2 {
+    font-size: 1.7em;
+}
+
+.form-horizontal {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+label {    
+    padding-bottom: 8px;
+    padding-left: 3px; 
+}
+
+#submit {
+    width: 100%;
+}
+
+.timeTable {
+    background-color: none;
+}
+
+tr:hover {
+    background: rgba(251, 192, 54, 0.685); 
+}
+
+tr:hover td {
+    background: rgba(251, 192, 54, 0.685);
+}
+
+/* Media Screen */
+
+@media screen and (max-width:768px) {
+    .table td, .table th {
+        padding: .40rem;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .table td, .table th {
+        padding: .40rem;
+    }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    float: none;
+    max-width: 100%;
+    }
+}
